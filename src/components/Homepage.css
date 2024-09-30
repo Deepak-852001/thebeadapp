@@ -1,0 +1,42 @@
+.homepage {
+    display: flex;                 /* Use flexbox */
+    flex-direction: column;        /* Stack elements vertically */
+    justify-content: center;       /* Center items vertically */
+    align-items: center;           /* Center items horizontally */
+    height: 100vh;                 /* Full viewport height */
+    text-align: center;            /* Center the text */
+}
+
+.logo {
+    width: 150px;                  /* Adjust the width of the logo */
+    margin-bottom: 20px;           /* Space below the logo */
+}
+
+.welcome h1, .welcome h2 {
+    margin: 10px 0;  
+    color: black;              /* Space around the headings */
+}
+
+.button {
+    padding: 10px 20px;            /* Padding inside the button */
+    font-size: 16px;               /* Button text size */
+    cursor: pointer;               /* Pointer on hover */
+    background-color: white;     /* Green background */
+    color: black;                  /* White text */
+    border: solid;
+    border-width: 1px;                  /* No border */
+    border-radius: 5px;            /* Rounded corners */
+    margin-top: 20px;    
+    transition: 0.75s;          /* Space above the button */
+}
+
+.button:hover {
+    background-color: green;
+    border: none;
+    color: white;
+
+}
+
+body {
+    background-color: orange;
+}

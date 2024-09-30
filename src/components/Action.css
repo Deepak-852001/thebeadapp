@@ -1,0 +1,35 @@
+.action-page {
+    display: flex;                 /* Flexbox layout */
+    flex-direction: column;        /* Stack items vertically */
+    justify-content: center;       /* Center items vertically */
+    align-items: center;           /* Center items horizontally */
+    height: 100vh;                 /* Full viewport height */
+    text-align: center;   
+}
+
+.action-page h1 {
+    margin-bottom: 20px;           /* Add space below the heading */
+    font-size: 2em;       
+    color: black;         /* Adjust font size for heading */
+}
+
+.action-page button {
+    padding: 10px 20px;            /* Padding inside the button */
+    font-size: 16px;               /* Button text size */
+    cursor: pointer;               /* Pointer on hover */
+    background-color: white;     /* Green background */
+    color: black;                  /* White text */
+    border: solid;      
+    border-width: 1px;            /* No border */
+    border-radius: 5px;            /* Rounded corners */
+    margin-top: 10px;   
+    transition: 0.75s;           /* Space between buttons */
+}
+
+.action-page button:hover {
+    background-color: green;
+    border: none;
+    color: white;
+
+}
+

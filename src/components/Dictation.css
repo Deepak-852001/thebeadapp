@@ -1,0 +1,33 @@
+.App {
+    display: flex;                 /* Use flexbox for centering */
+    flex-direction: column;       /* Stack items vertically */
+    justify-content: center;      /* Center items vertically */
+    align-items: center;          /* Center items horizontally */
+    height: 100vh;                /* Full viewport height */
+    background-color: #f9f9f9;   /* Light background for contrast */
+    font-family: Arial, sans-serif; /* Font styling */
+  }
+  
+  h1 {
+    font-size: 2rem;              /* Font size for the main heading */
+    color: #333;                  /* Dark color for the heading */
+  }
+  
+  h2 {
+    font-size: 1.5rem;            /* Font size for the current number */
+    color: #555;  
+        
+    text-align: center;                      /* Slightly lighter color */
+  }
+  
+  h1.currentNumber {
+    font-size: 3rem;              /* Larger font size for the currently calling number */
+    color: #2e7d32;               /* Dark green color for emphasis */
+    margin-top: 10px;             /* Space above the currently calling number */
+    text-align: center;
+  }
+  
+  h2 br {
+    margin: 10px 0;     /* Space between lines in the h2 */
+  }
+  
