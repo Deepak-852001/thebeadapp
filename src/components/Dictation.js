@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Dictation.css'; // Import the CSS file
 
 function Dictation() {
   const numbers = [2, -3, 5, 2, 9, -1];
   const [currentNumber, setCurrentNumber] = useState(null); // Store the current number being spoken
   const [finished, setFinished] = useState(false); // Track if the numbers have been fully spoken
+  const hasRan = useRef(false); // Ref to track if the effect has run
 
   // Define the speakNumbers function
   const speakNumbers = (numbersArray) => {
@@ -35,8 +36,11 @@ function Dictation() {
 
   // Use useEffect to call speakNumbers after the component mounts
   useEffect(() => {
-    speakNumbers(numbers);
-  }, []); // Empty dependency array ensures it only runs once
+    if (!hasRan.current) {
+      speakNumbers(numbers);
+      hasRan.current = true; // Mark the effect as run
+    }
+  }, []); // Keep the dependency array empty
 
   return (
     <div className="App">
